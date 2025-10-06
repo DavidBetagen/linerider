@@ -1,0 +1,36 @@
+{
+    "name": "betagen/linerider",
+    "description": "A lib for helping to send messages through Line Messging API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DavidBetagen",
+            "email": "mr.thanakorn.pr@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Betagen\\Linerider\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0"
+    },
+     "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Betagen\\Linerider\\LineriderServiceProvider"
+            ],
+            "aliases": {
+                "Linerider": "Betagen\\Linerider\\Facades\\Linerider"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
